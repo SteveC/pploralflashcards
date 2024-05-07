@@ -1,0 +1,36 @@
+.flashcard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.flashcard {
+    width: 600px; /* Increased width to make the flashcard bigger */
+    height: 400px; /* Increased height to make the flashcard bigger */
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.flashcard h5 {
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block; /* Or flex, inline, etc., depending on your layout */
+}
+
+.all-flashcards {
+    display: none; /* Hide by default */
+    width: 100%; /* Take the full width of the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
