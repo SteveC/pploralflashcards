@@ -1,22 +1,26 @@
 let currentCard = -1;
 let answerVisible = false;
 
-function toggleAnswer() {
+document.getElementById("showAnswerBtn").addEventListener("click", function() {
     const answerElement = document.getElementById("answer");
-    if (answerVisible) {
-        showNextCard();
-    } else {
-        answerElement.style.visibility = "visible";
-        answerVisible = true;
-    }
-}
+    answerElement.style.visibility = "visible";
+    answerVisible = true;
+    document.getElementById("showAnswerBtn").style.display = "none";
+    document.getElementById("nextQuestionBtn").style.display = "inline-block";
+});
+
+document.getElementById("nextQuestionBtn").addEventListener("click", function() {
+    showNextCard();
+    document.getElementById("nextQuestionBtn").style.display = "none";
+    document.getElementById("showAnswerBtn").style.display = "inline-block";
+});
 
 function showNextCard() {
     const allFlashcardsDiv = document.querySelector(".all-flashcards");
-    allFlashcardsDiv.style.display = "none"; // Hide the list of all flashcards
+    allFlashcardsDiv.style.display = "none"; 
 
     const flashcardDiv = document.querySelector(".flashcard");
-    flashcardDiv.style.display = "flex"; // Show the single flashcard
+    flashcardDiv.style.display = "flex"; 
 
     let newIndex;
     do {
@@ -33,11 +37,11 @@ function showNextCard() {
 
 function listAllFlashcards() {
     const flashcardDiv = document.querySelector(".flashcard");
-    flashcardDiv.style.display = "none"; // Hide the single flashcard view
+    flashcardDiv.style.display = "none";
 
     const allFlashcardsDiv = document.querySelector(".all-flashcards");
-    allFlashcardsDiv.innerHTML = ""; // Clear previous content
-    allFlashcardsDiv.style.display = "block"; // Show the list of all flashcards
+    allFlashcardsDiv.innerHTML = "";
+    allFlashcardsDiv.style.display = "block";
 
     const cardCount = flashcards.length;
     const cardCountElement = document.createElement("div");
@@ -59,16 +63,14 @@ function listAllFlashcards() {
     });
 }
 
-// Event listeners for card interactions
-document.querySelector(".flashcard").addEventListener("click", toggleAnswer);
-
 document.getElementById("navItem1").addEventListener("click", function() {
     showNextCard();
     document.getElementById("answer").style.visibility = "hidden";
     answerVisible = false;
+    document.getElementById("nextQuestionBtn").style.display = "none";
+    document.getElementById("showAnswerBtn").style.display = "inline-block";
 });
 
 document.getElementById("navItem2").addEventListener("click", listAllFlashcards);
 
-// Initialize the app with the first card visible
 window.onload = showNextCard;
