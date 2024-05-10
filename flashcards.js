@@ -316,12 +316,6 @@ const flashcards = [
   },
   {
     category: "aerodynamics",
-    question: "What is 'Mach tuck'?",
-    answer:
-      "Mach tuck is an aerodynamic effect observed in high-speed flight where the nose of the aircraft tends to pitch downward as a result of center of pressure moving aft when approaching transonic speeds.",
-  },
-  {
-    category: "aerodynamics",
     question: "What role does the trim system play in flight?",
     answer:
       "The trim system adjusts the position of the control surfaces to relieve the pilot from having to apply constant pressure to the flight controls, aiding in maintaining desired flight attitudes.",
