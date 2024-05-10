@@ -57,11 +57,17 @@ function listAllFlashcards() {
             allFlashcardsDiv.appendChild(categoryElement);
         }
 
+        // Simplified hash for the question as a unique identifier, ensuring it's positive and short
+        const questionHash = Math.abs(card.question.split('').reduce((a, b) => {
+            return ((a << 5) - a) + b.charCodeAt(0);
+        }, 0)).toString(16).substring(0, 4);  // Convert to hex and limit to 4 characters
+
         const cardElement = document.createElement("div");
-        cardElement.innerHTML = `Question: <b>${card.question}</b><br />Answer: ${card.answer}<br /><br />`;
+        cardElement.innerHTML = `Question ${questionHash}: <b>${card.question}</b><br />Answer: ${card.answer}<br /><br />`;
         allFlashcardsDiv.appendChild(cardElement);
     });
 }
+
 
 document.getElementById("navItem1").addEventListener("click", function() {
     showNextCard();
