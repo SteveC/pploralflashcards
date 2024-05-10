@@ -2139,4 +2139,144 @@ const flashcards = [
     answer:
       "At higher altitudes, decreased air density reduces engine performance, requiring longer go-around procedures and higher airspeeds.",
   },
+  {
+    question:
+      "Which specific flight instruments in the Cessna 172 are powered by the electrical system?",
+    answer:
+      "The flight instruments in the Cessna 172 powered by the electrical system typically include the attitude indicator, some radios, transponder, and the GPS systems.",
+  },
+  {
+    question:
+      "Which specific flight instruments in the Cessna 172 are powered by the vacuum system?",
+    answer:
+      "The vacuum system in the Cessna 172 powers the gyroscopic instruments, which include the heading indicator and the attitude indicator.",
+  },
+  {
+    question: "What is a spin, and how can it occur in a Cessna 172?",
+    answer:
+      "A spin in a Cessna 172 is an aerodynamic stall that has progressed to a point where the aircraft follows a corkscrew path downwards. It typically occurs due to excessive back pressure in the control column during a stall, leading to one wing stalling more deeply than the other.",
+  },
+  {
+    question: "How do you recover from a spin in a Cessna 172?",
+    answer:
+      "To recover from a spin in a Cessna 172, you need to follow the PARE procedure: Power to idle, Ailerons neutral, Rudder opposite to the spin direction, and Elevate the nose to break the stall.",
+  },
+  {
+    question: "What causes wind?",
+    answer:
+      "Wind is caused by differences in atmospheric pressure. When air moves from a high-pressure area to a low-pressure area, it results in wind.",
+  },
+  {
+    question: "What is a thermal?",
+    answer:
+      "A thermal is a column of rising air in the lower altitudes of the Earth's atmosphere. Thermals are created by the uneven heating of the Earth's surface from solar radiation.",
+  },
+  {
+    question: "What are automatic weather model output statistics?",
+    answer:
+      "Model Output Statistics (MOS) are automated weather forecasts that use statistical techniques and data from numerical weather prediction models to produce localized weather predictions.",
+  },
+  {
+    question: "What is a dry line on a weather chart?",
+    answer:
+      "A dry line is a boundary that separates a moist air mass from a dry air mass. It is typically found in the plains states and can lead to severe weather conditions, including thunderstorms.",
+  },
+  {
+    question: "What is defined as an alert area in aviation?",
+    answer:
+      "An alert area is a designated airspace in which there may be a high volume of pilot training or an unusual type of aerial activity. Both participants and non-participants must exercise caution.",
+  },
+  {
+    question:
+      "Is it permissible to fly VFR through an ADIZ, and what are the requirements if so?",
+    answer:
+      "Yes, it is permissible to fly VFR through an ADIZ (Air Defense Identification Zone), but pilots must file a flight plan, equip a working transponder with altitude reporting, and maintain radio communication with ATC.",
+  },
+  {
+    question:
+      "What is the minimum safe altitude for horizontal and vertical navigation in rural areas?",
+    answer:
+      "The minimum safe altitude in rural areas is 500 feet above the highest obstacle within a horizontal radius of 2000 feet of the aircraft.",
+  },
+  {
+    question:
+      "What is the minimum safe altitude for horizontal and vertical navigation in non-rural areas?",
+    answer:
+      "In non-rural or congested areas, the minimum safe altitude is 1000 feet above the highest obstacle within a horizontal radius of 2000 feet of the aircraft.",
+  },
+  {
+    question:
+      "What are MOAs and Restricted Airspaces, and where can they be located?",
+    answer:
+      "MOAs (Military Operations Areas) and Restricted Airspaces are areas of controlled airspace where military activities are conducted. Pilots can find their locations and requirements in sectional charts and NOTAMs.",
+  },
+  {
+    question: "How much does aviation fuel weigh per gallon?",
+    answer:
+      "Aviation fuel, specifically Avgas, weighs approximately 6 pounds per gallon.",
+  },
+  {
+    question:
+      "How much fuel does a Cessna 172 typically burn per hour during flight?",
+    answer:
+      "The Cessna 172 typically burns about 8 to 10 gallons of fuel per hour, depending on the conditions of flight and power settings.",
+  },
+  {
+    question: "How do you obtain a Special VFR (SVFR) clearance?",
+    answer:
+      "To obtain a Special VFR clearance, you must request it from Air Traffic Control (ATC). This clearance allows you to fly in controlled airspace with less than standard VFR weather minimums, but only from sunrise to sunset, unless you are rated and equipped for night flying.",
+  },
+  {
+    question:
+      "What are VR and IR routes, and how do the three-digit and four-digit identifiers affect their classification for military training?",
+    answer:
+      "VR and IR routes are Visual and Instrument Routes used by the military for training purposes. VR routes are for visual flight rules and are typically below 10,000 feet. IR routes are for instrument flight rules. Three-digit identifiers are used for routes below 1,500 feet AGL, and four-digit identifiers are for routes at or above 1,500 feet AGL.",
+  },
+  {
+    question:
+      "Can you fly through a Temporary Flight Restriction (TFR) area during your flight?",
+    answer:
+      "No, you must avoid Temporary Flight Restriction (TFR) areas unless you have specific authorization from ATC or the TFR does not apply to your type of flight, such as certain law enforcement, medical, or firefighting flights.",
+  },
+  {
+    question:
+      "What type of engine is used in the Cessna 172, and what are its characteristics?",
+    answer:
+      "The Cessna 172 typically uses a Lycoming IO-360-L2A engine. This is a four-cylinder, horizontally opposed, naturally aspirated engine producing 180 horsepower.",
+  },
+  {
+    question:
+      "What is meant by 'stressed skin' in aircraft design, specifically in the context of the Cessna 172?",
+    answer:
+      "Stressed skin is a structural design in aviation where the aircraft's skin bears a significant part of the structural load of the aircraft. In the Cessna 172, the aluminum skin helps to maintain the structural integrity, reducing the need for internal framework.",
+  },
+  {
+    question: "How does each flight instrument in a Cessna 172 function?",
+    answer:
+      "In a Cessna 172, essential flight instruments include the airspeed indicator, altimeter, attitude indicator, tachometer, oil pressure gauge, and fuel gauges, each providing crucial information for safe flight operations.",
+  },
+  {
+    question:
+      "What instruments are required for VFR flight in general aviation?",
+    answer:
+      "For VFR flight, the FAA requires an airspeed indicator, altimeter, compass, and depending on the aircraft, a tachometer, oil pressure gauge, temperature gauge, fuel gauge, and landing gear position indicator.",
+  },
+  {
+    question:
+      "What should you check for when you get no RPM drop during a magneto check in a Cessna 172?",
+    answer:
+      "If there is no RPM drop during a magneto check, it could indicate a malfunctioning magneto or faulty spark plugs. This requires further investigation and potentially maintenance before flight to ensure engine reliability and safety.",
+  },
+  {
+    question:
+      "Why should you not turn off the airplane using the ignition key when shutting down the engine after a flight?",
+    answer:
+      "You should not turn off the airplane using the ignition key to ensure there is no fuel left in the engine which could accidentally start it if a propeller is moved. Instead, shut down by cutting off the fuel using the mixture control, ensuring a safer engine stop.",
+  },
+  {
+    question:
+      "What is the maximum allowable drop on a magneto check in a Cessna 172?",
+    answer:
+      "The maximum allowable drop for a magneto check in a Cessna 172 is typically 125 RPM, and the difference between the two magnetos should not exceed 50 RPM. These values ensure that the magnetos are functioning correctly and safely.",
+  },
 ];
