@@ -2227,10 +2227,8 @@ const flashcards = [
       "To obtain a Special VFR clearance, you must request it from Air Traffic Control (ATC). This clearance allows you to fly in controlled airspace with less than standard VFR weather minimums, but only from sunrise to sunset, unless you are rated and equipped for night flying.",
   },
   {
-    question:
-      "What are VR and IR routes, and how do the three-digit and four-digit identifiers affect their classification for military training?",
-    answer:
-      "VR and IR routes are Visual and Instrument Routes used by the military for training purposes. VR routes are for visual flight rules and are typically below 10,000 feet. IR routes are for instrument flight rules. Three-digit identifiers are used for routes below 1,500 feet AGL, and four-digit identifiers are for routes at or above 1,500 feet AGL.",
+    "question": "What are VR and IR routes, and how do the three-digit and four-digit identifiers affect their classification for military training?",
+    "answer": "VR and IR routes are Visual and Instrument Routes used by the military for training. VR routes are for visual flight, and IR routes are for instrument flight. Four-digit identifiers are used for routes below 1,500 feet AGL, and three-digit identifiers are for routes at or above 1,500 feet AGL."
   },
   {
     question:
@@ -2251,9 +2249,8 @@ const flashcards = [
       "Stressed skin is a structural design in aviation where the aircraft's skin bears a significant part of the structural load of the aircraft. In the Cessna 172, the aluminum skin helps to maintain the structural integrity, reducing the need for internal framework.",
   },
   {
-    question: "How does each flight instrument in a Cessna 172 function?",
-    answer:
-      "In a Cessna 172, essential flight instruments include the airspeed indicator, altimeter, attitude indicator, tachometer, oil pressure gauge, and fuel gauges, each providing crucial information for safe flight operations.",
+    "question": "What instruments are included in the six-pack of a Cessna 172?",
+    "answer": "The six-pack in a Cessna 172 consists of six primary flight instruments: the airspeed indicator, the attitude indicator, the altimeter, the turn coordinator, the heading indicator, and the vertical speed indicator. These instruments are essential for basic flight operations and provide crucial information about the aircraft's speed, orientation, altitude, rate of turn, heading, and rate of climb or descent."
   },
   {
     question:
