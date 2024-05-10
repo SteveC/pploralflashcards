@@ -409,7 +409,7 @@ const flashcards = [
     category: "instruments",
     question: "How does temperature affect the altimeter?",
     answer:
-      "Colder than standard temperatures can cause the altimeter to read higher than the true altitude, while warmer temperatures can cause it to read lower.",
+    "Colder than standard temperatures can cause the altimeter to read lower than the true altitude, meaning the aircraft is actually higher than indicated. Conversely, warmer temperatures can cause the altimeter to read higher than the true altitude, indicating the aircraft is lower than it actually is."
   },
   {
     category: "instruments",
