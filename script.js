@@ -15,6 +15,12 @@ document.getElementById("nextQuestionBtn").addEventListener("click", function() 
     document.getElementById("showAnswerBtn").style.display = "inline-block";
 });
 
+function generateQuestionHash(question) {
+    return Math.abs(question.split('').reduce((a, b) => {
+        return ((a << 5) - a) + b.charCodeAt(0);
+    }, 0)).toString(16).substring(0, 4); // Convert to hex and limit to 4 characters
+}
+
 function showNextCard() {
     const allFlashcardsDiv = document.querySelector(".all-flashcards");
     allFlashcardsDiv.style.display = "none"; 
@@ -29,7 +35,9 @@ function showNextCard() {
     currentCard = newIndex;
 
     const card = flashcards[currentCard];
-    document.getElementById("question").textContent = card.question;
+    const questionHash = generateQuestionHash(card.question);
+
+    document.getElementById("question").textContent = `Question ${questionHash}: ${card.question}`;
     document.getElementById("answer").textContent = card.answer;
     document.getElementById("answer").style.visibility = "hidden";
     answerVisible = false;
@@ -57,17 +65,12 @@ function listAllFlashcards() {
             allFlashcardsDiv.appendChild(categoryElement);
         }
 
-        // Simplified hash for the question as a unique identifier, ensuring it's positive and short
-        const questionHash = Math.abs(card.question.split('').reduce((a, b) => {
-            return ((a << 5) - a) + b.charCodeAt(0);
-        }, 0)).toString(16).substring(0, 4);  // Convert to hex and limit to 4 characters
-
+        const questionHash = generateQuestionHash(card.question);
         const cardElement = document.createElement("div");
         cardElement.innerHTML = `Question ${questionHash}: <b>${card.question}</b><br />Answer: ${card.answer}<br /><br />`;
         allFlashcardsDiv.appendChild(cardElement);
     });
 }
-
 
 document.getElementById("navItem1").addEventListener("click", function() {
     showNextCard();
