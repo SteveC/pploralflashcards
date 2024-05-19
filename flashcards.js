@@ -609,7 +609,7 @@ const flashcards = [
   {
     question: "What is METAR and what information does it provide?",
     answer:
-      "METAR is an aviation routine weather report that provides detailed information about the observed weather at an airport, including wind, visibility, cloud cover, temperature, dew point, and current weather phenomena.",
+      "METAR stands for Meteorological Aerodrome Report. It is an aviation routine weather report that provides detailed information about the observed weather at an airport, including wind, visibility, cloud cover, temperature, dew point, and current weather phenomena. For example: METAR KJFK 121651Z 18005KT 10SM SCT020 BKN250 25/17 A3005 RMK AO2.",
   },
   {
     question: "Explain the significance of TAF in aviation.",
@@ -1124,7 +1124,7 @@ const flashcards = [
     question:
       "What are the standard traffic pattern operations at most airports?",
     answer:
-      "Standard traffic pattern operations include flying a rectangular course around the runway: upwind leg, crosswind leg, downwind leg, base leg, and final approach, typically at 1,000 feet AGL.",
+      "Standard traffic pattern operations include flying a rectangular course around the runway: upwind leg, crosswind leg, downwind leg, base leg, and final approach, typically at 1,000 feet AGL. The standard traffic pattern is to the left unless otherwise indicated.",
   },
   {
     category: "airportops",
@@ -1207,7 +1207,7 @@ const flashcards = [
     category: "airportops",
     question: "Describe how to perform a soft-field takeoff in a Cessna 172.",
     answer:
-      "To perform a soft-field takeoff, use flaps as recommended, apply back pressure to lift the nose wheel off the ground early, and maintain a slightly nose-high attitude to climb out just above stall speed until reaching a safe altitude.",
+      "To perform a soft-field takeoff in a Cessna 172, use 10 degrees of flaps, apply back pressure to lift the nose wheel off the ground early, and maintain a slightly nose-high attitude to climb out just above stall speed until reaching a safe altitude.",
   },
   {
     category: "airportops",
@@ -1326,7 +1326,7 @@ const flashcards = [
   {
     category: "fars",
     question:
-      "How often must a pilot review a pre-flight action for a flight under VFR?",
+      "What pre-flight actions must a pilot review before a flight under VFR?",
     answer:
       "Before each flight, pilots must review all available information concerning that flight, including weather reports, fuel requirements, alternatives available if the planned flight cannot be completed, and runway lengths at airports of intended use.",
   },
@@ -1419,7 +1419,8 @@ const flashcards = [
     category: "fars",
     question:
       "What airspace requires a pilot to obtain a clearance from ATC before entering?",
-    answer: "Class A, B, and C airspace require ATC clearance prior to entry.",
+    answer:
+      "Class A and B airspace require ATC clearance prior to entry. Class C and D airspace require pilots to establish two-way radio communication with ATC before entering.",
   },
   {
     category: "fars",
@@ -1467,7 +1468,8 @@ const flashcards = [
   },
   {
     category: "fars",
-    question: "What regulations apply to the carriage of hazardous materials?",
+    question:
+      "FIXME What regulations apply to the carriage of hazardous materials?",
     answer:
       "Pilots must comply with FAA and DOT regulations regarding the carriage of hazardous materials, which require appropriate packaging, labeling, and documentation.",
   },
@@ -2427,5 +2429,343 @@ const flashcards = [
       "Which FAR section specifies the reporting requirements for aircraft accidents and incidents to the NTSB?",
     answer:
       "FAR Part 830.15 specifies the reporting requirements for aircraft accidents and incidents to the NTSB.",
+  },
+  {
+    question: "How does a VASI system offer more than one approach path?",
+    answer:
+      "A VASI system can offer more than one approach path by using multiple sets of light bars, typically arranged in pairs. Each pair of light bars can be set to different angles, providing pilots with visual cues for different glide paths. This allows for a standard approach path and a steeper or shallower path, accommodating different types of aircraft and operational needs.",
+  },
+  {
+    question: "What feature of VASI allows it to provide multiple glide paths?",
+    answer:
+      "The feature of VASI that allows it to provide multiple glide paths is the use of multiple sets of light bars, each configured at different angles. This setup can visually indicate different descent angles to pilots, allowing flexibility in approach paths.",
+  },
+  {
+    question: "What is a Visual Approach Slope Indicator (VASI)?",
+    answer:
+      "A Visual Approach Slope Indicator (VASI) is a system of lights arranged to provide visual descent guidance during the approach to a runway, helping pilots maintain the correct glide path.",
+  },
+  {
+    question: "How does a VASI system work?",
+    answer:
+      "A VASI system works by using red and white lights arranged in bars. If the pilot sees white over white, they are too high; red over white indicates they are on the correct glide path; red over red means they are too low.",
+  },
+  {
+    question: "What is the primary purpose of a VASI system?",
+    answer:
+      "The primary purpose of a VASI system is to provide visual descent guidance information during the approach to a runway, helping pilots to maintain the correct glide path.",
+  },
+  {
+    question: "What is a Precision Approach Path Indicator (PAPI)?",
+    answer:
+      "A Precision Approach Path Indicator (PAPI) is a visual aid that provides descent guidance information to pilots, consisting of a single row of lights that help maintain the correct glide path during an approach to a runway.",
+  },
+  {
+    question: "How does a PAPI system work?",
+    answer:
+      "A PAPI system uses a single row of four lights. If the pilot sees all white lights, they are too high; three white and one red mean slightly high; two white and two red indicate they are on the correct glide path; one white and three red mean slightly low; and all red lights indicate they are too low.",
+  },
+  {
+    question: "What is the difference between VASI and PAPI systems?",
+    answer:
+      "The main difference between VASI and PAPI systems is the arrangement of lights. VASI uses two bars of lights (near and far) while PAPI uses a single row of four lights. Both provide glide path guidance, but PAPI is more precise.",
+  },
+  {
+    question: "What are runway edge lights?",
+    answer:
+      "Runway edge lights are white lights placed along the edges of a runway to outline its width during periods of darkness or low visibility. The last 2,000 feet or half of the runway length (whichever is less) may be yellow to form a caution zone for landings.",
+  },
+  {
+    question: "What is the purpose of runway end identifier lights (REIL)?",
+    answer:
+      "Runway end identifier lights (REIL) are a pair of synchronized flashing lights located at the runway threshold to help identify the approach end of the runway, especially in poor visibility conditions.",
+  },
+  {
+    question: "What are taxiway lights?",
+    answer:
+      "Taxiway lights are blue lights that outline the edges of taxiways. Green lights may also be used to mark the centerline of taxiways to help pilots navigate during night operations or low visibility.",
+  },
+  {
+    question:
+      "What is the purpose of runway centerline lighting systems (RCLS)?",
+    answer:
+      "Runway centerline lighting systems (RCLS) are white lights embedded along the centerline of the runway, which change to alternating red and white lights starting 3,000 feet from the end of the runway and to red lights for the last 1,000 feet, to assist pilots in maintaining alignment during landing and takeoff.",
+  },
+  {
+    question: "What are touchdown zone lights (TDZL)?",
+    answer:
+      "Touchdown zone lights (TDZL) are rows of white lights arranged in pairs on either side of the runway centerline, starting 100 feet beyond the landing threshold and extending to 3,000 feet or the midpoint of the runway, whichever is less. They provide visual cues for the touchdown area of the runway.",
+  },
+  {
+    question: "What is an approach lighting system (ALS)?",
+    answer:
+      "An approach lighting system (ALS) is a series of light bars, strobe lights, or a combination of both extending from the landing threshold outward into the approach area. It provides visual information to help pilots transition from instrument flight to visual flight for landing.",
+  },
+  {
+    question: "How does an ALS help during landing?",
+    answer:
+      "An approach lighting system (ALS) helps during landing by providing a reference for the pilot to visually align the aircraft with the runway, particularly in low visibility conditions. The lights can vary in intensity and configuration, providing a clear and progressive visual guide.",
+  },
+  {
+    question: "What does the acronym PAVE stand for in aviation safety?",
+    answer:
+      "PAVE stands for Pilot, Aircraft, enVironment, and External pressures. It is a checklist used by pilots to assess potential risks before a flight.",
+  },
+  {
+    question:
+      "What does the acronym ARROWG stand for in aviation documentation?",
+    answer:
+      "ARROWG stands for Airworthiness certificate, Registration certificate, Radio station license (if operating internationally), Operating limitations, Weight and balance data, and G1000 manual (or equivalent if using a glass cockpit). These are documents that must be on board an aircraft.",
+  },
+  {
+    question:
+      "What does the acronym AVIATES stand for in aircraft maintenance?",
+    answer:
+      "AVIATES stands for Annual inspection, VOR check (every 30 days for IFR), 100-hour inspection (if used for hire), Altimeter and static system check (every 24 months for IFR), Transponder check (every 24 months), ELT check (every 12 months), and Service bulletins/airworthiness directives compliance.",
+  },
+  {
+    question: "What does the acronym NWKRAFT stand for in pre-flight planning?",
+    answer:
+      "NWKRAFT stands for NOTAMs, Weather, Known ATC delays, Runway lengths, Alternates, Fuel requirements, and Takeoff and landing distances. It is a checklist used by pilots to ensure all critical pre-flight planning aspects are covered.",
+  },
+  {
+    question: "What does the acronym WAPSG stand for in weather briefings?",
+    answer:
+      "WAPSG stands for Wx brief, AIRMETs, PIREPs, SIGMETs, and Graphical wx maps. These are key components of a comprehensive weather briefing for pilots.",
+  },
+  {
+    question:
+      "What does the acronym IMSAFE stand for in pilot self-assessment?",
+    answer:
+      "IMSAFE stands for Illness, Medication, Stress, Alcohol, Fatigue, and Emotion. It is a self-assessment tool for pilots to evaluate their fitness for flight.",
+  },
+  {
+    question: "What does the V-speed Vx represent in a Cessna 172?",
+    answer:
+      "Vx represents the best angle of climb speed in a Cessna 172, which is the speed that provides the maximum altitude gain in the shortest horizontal distance. For a Cessna 172, Vx is approximately 62 knots.",
+  },
+  {
+    question: "What is Vy in a Cessna 172?",
+    answer:
+      "Vy represents the best rate of climb speed in a Cessna 172, which is the speed that provides the maximum altitude gain in the shortest time. For a Cessna 172, Vy is approximately 74 knots.",
+  },
+  {
+    question: "What is Vso in a Cessna 172?",
+    answer:
+      "Vso represents the stall speed in the landing configuration (with flaps extended) for a Cessna 172. Vso is approximately 40 knots.",
+  },
+  {
+    question: "What is Vs in a Cessna 172?",
+    answer:
+      "Vs represents the stall speed in a clean configuration (without flaps) for a Cessna 172. Vs is approximately 48 knots.",
+  },
+  {
+    question: "What does the V-speed Vfe represent in a Cessna 172?",
+    answer:
+      "Vfe represents the maximum flap extended speed in a Cessna 172, which is the highest speed at which the flaps can be safely extended. For a Cessna 172, Vfe is 85 knots with full flaps.",
+  },
+  {
+    question: "What does the V-speed Va represent in a Cessna 172?",
+    answer:
+      "Va represents the design maneuvering speed in a Cessna 172, which is the maximum speed at which full, abrupt control movements can be made without overstressing the aircraft. Va varies with weight but is typically around 105 knots at maximum gross weight.",
+  },
+  {
+    question: "What is Vno in a Cessna 172?",
+    answer:
+      "Vno represents the maximum structural cruising speed in a Cessna 172, which is the highest speed at which the aircraft can be safely flown in turbulent air. Vno is approximately 129 knots.",
+  },
+  {
+    question: "What does the V-speed Vne represent in a Cessna 172?",
+    answer:
+      "Vne represents the never-exceed speed in a Cessna 172, which is the absolute maximum speed that should never be exceeded in any operation. Vne is 163 knots.",
+  },
+  {
+    question: "What is Vr in a Cessna 172?",
+    answer:
+      "Vr represents the rotation speed in a Cessna 172, which is the speed at which the pilot should begin to apply back-pressure on the control yoke to lift off during takeoff. For a Cessna 172, Vr is approximately 55 knots.",
+  },
+  {
+    question: "What is Vg in a Cessna 172?",
+    answer:
+      "Vg represents the best glide speed in a Cessna 172, which is the speed that provides the greatest distance traveled per unit of altitude lost during a glide. For a Cessna 172, Vg is approximately 65 knots.",
+  },
+  {
+    question: "What is pressure altitude?",
+    answer:
+      "Pressure altitude is the altitude indicated when the altimeter setting is adjusted to 29.92 inches of mercury (Hg). It represents the altitude above the standard datum plane, which is a theoretical level where the atmospheric pressure is 29.92 in Hg.",
+  },
+  {
+    question: "How do you determine pressure altitude?",
+    answer:
+      "Pressure altitude is determined by setting the altimeter to 29.92 inches of mercury (Hg) and reading the indicated altitude, or by using the formula: Pressure Altitude = (Standard Pressure - Current Pressure) * 1,000 + Field Elevation.",
+  },
+  {
+    question: "What is density altitude?",
+    answer:
+      "Density altitude is the pressure altitude corrected for non-standard temperature. It represents the altitude at which the aircraft feels like it is flying due to the density of the air. Higher temperatures and lower pressures increase density altitude.",
+  },
+  {
+    question: "How do you calculate density altitude?",
+    answer:
+      "Density altitude can be calculated using a density altitude chart or by using the formula: Density Altitude = Pressure Altitude + [120 * (OAT - ISA Temperature)].",
+  },
+  {
+    question: "What is true altitude?",
+    answer:
+      "True altitude is the actual height above mean sea level (MSL). It is the altitude shown on the altimeter when it is set to the local altimeter setting and corrected for temperature and pressure variations.",
+  },
+  {
+    question: "What is indicated altitude?",
+    answer:
+      "Indicated altitude is the altitude read directly from the altimeter when it is set to the local barometric pressure at sea level (QNH). It is not corrected for non-standard temperature or pressure.",
+  },
+  {
+    question: "What is absolute altitude?",
+    answer:
+      "Absolute altitude is the height of the aircraft above the terrain or ground level (AGL). It is the difference between true altitude and the elevation of the terrain directly below the aircraft.",
+  },
+  {
+    question: "What is field elevation?",
+    answer:
+      "Field elevation is the highest point of an airport's usable runways, measured in feet above mean sea level (MSL). It is typically published in the airport's data and used for altimeter settings.",
+  },
+  {
+    question: "What is minimum safe altitude (MSA)?",
+    answer:
+      "Minimum safe altitude (MSA) is the lowest altitude which provides a safe clearance above terrain and obstacles in a specific area, typically used for emergency planning and navigation. It varies based on terrain and obstacles.",
+  },
+  {
+    question: "What is the transition altitude?",
+    answer:
+      "The transition altitude is the altitude at or below which the vertical position of an aircraft is controlled by reference to altitudes (feet) and above which it is controlled by reference to flight levels (FL). In the United States, the transition altitude is usually 18,000 feet MSL.",
+  },
+  {
+    question: "What is the transition level?",
+    answer:
+      "The transition level is the lowest flight level available for use above the transition altitude. It is the point where pilots change their altimeter setting from local pressure (QNH) to standard pressure (29.92 in Hg).",
+  },
+  {
+    question: "What is the cruising altitude?",
+    answer:
+      "Cruising altitude is the altitude at which an aircraft is level and maintains during the cruise phase of flight. It is chosen based on factors such as airspace structure, weather conditions, and fuel efficiency.",
+  },
+  {
+    question:
+      "What are the oxygen requirements for flights between 12,500 and 14,000 feet MSL?",
+    answer:
+      "For flights between 12,500 and 14,000 feet MSL, the flight crew must use supplemental oxygen if they are at these altitudes for more than 30 minutes.",
+  },
+  {
+    question:
+      "What are the oxygen requirements for flights above 14,000 feet MSL?",
+    answer:
+      "For flights above 14,000 feet MSL, the flight crew must use supplemental oxygen at all times.",
+  },
+  {
+    question:
+      "What are the oxygen requirements for flights above 15,000 feet MSL?",
+    answer:
+      "For flights above 15,000 feet MSL, supplemental oxygen must be provided for each occupant of the aircraft.",
+  },
+  {
+    question:
+      "At what altitude must passengers be provided with supplemental oxygen?",
+    answer:
+      "Passengers must be provided with supplemental oxygen when flying above 15,000 feet MSL.",
+  },
+  {
+    question: "Why is supplemental oxygen necessary at higher altitudes?",
+    answer:
+      "Supplemental oxygen is necessary at higher altitudes because the partial pressure of oxygen decreases with altitude, which can lead to hypoxia, a condition where the body does not get enough oxygen.",
+  },
+  {
+    question: "What is indicated airspeed (IAS)?",
+    answer:
+      "Indicated airspeed (IAS) is the speed shown on the aircraft's airspeed indicator. It is not corrected for altitude or temperature variations.",
+  },
+  {
+    question: "What is calibrated airspeed (CAS)?",
+    answer:
+      "Calibrated airspeed (CAS) is indicated airspeed corrected for instrument and position errors. It is a more accurate measure of the actual speed of the aircraft through the air.",
+  },
+  {
+    question: "What is true airspeed (TAS)?",
+    answer:
+      "True airspeed (TAS) is the actual speed of the aircraft relative to the air mass in which it is flying. It is calibrated airspeed corrected for altitude and non-standard temperature.",
+  },
+  {
+    question: "How do you calculate true airspeed (TAS)?",
+    answer:
+      "True airspeed (TAS) can be calculated using an E6B flight computer or a TAS formula that accounts for altitude and temperature. A rough estimate is adding 2% of the indicated airspeed for every 1,000 feet of altitude above sea level.",
+  },
+  {
+    question: "What is groundspeed (GS)?",
+    answer:
+      "Groundspeed (GS) is the actual speed of the aircraft relative to the ground. It is true airspeed adjusted for wind conditions, meaning it is TAS plus or minus the wind component.",
+  },
+  {
+    question: "How does wind affect groundspeed (GS)?",
+    answer:
+      "Wind affects groundspeed by increasing it with a tailwind and decreasing it with a headwind. Crosswinds can also affect the aircraft's track over the ground.",
+  },
+  {
+    question:
+      "What is the difference between indicated airspeed (IAS) and true airspeed (TAS)?",
+    answer:
+      "The difference between indicated airspeed (IAS) and true airspeed (TAS) is that IAS is the reading from the airspeed indicator without corrections for altitude and temperature, while TAS is IAS corrected for these factors, representing the actual speed through the air.",
+  },
+  {
+    question: "How is indicated airspeed (IAS) affected by altitude?",
+    answer:
+      "Indicated airspeed (IAS) decreases with altitude for a given true airspeed (TAS) because the air density decreases as altitude increases. This means the airspeed indicator will show a lower speed at higher altitudes for the same TAS.",
+  },
+  {
+    category: "fars",
+    question: "When is a transponder with Mode C required in Class A airspace?",
+    answer:
+      "A transponder with Mode C is required at all times in Class A airspace.",
+  },
+  {
+    category: "fars",
+    question: "When is a transponder with Mode C required in Class B airspace?",
+    answer:
+      "A transponder with Mode C is required within and above Class B airspace and within 30 nautical miles of Class B primary airports (Mode C veil).",
+  },
+  {
+    category: "fars",
+    question: "When is a transponder with Mode C required in Class C airspace?",
+    answer:
+      "A transponder with Mode C is required within and above Class C airspace and up to 10,000 feet MSL.",
+  },
+  {
+    category: "fars",
+    question: "Is a transponder required in Class D airspace?",
+    answer:
+      "A transponder is not generally required in Class D airspace, but it may be required if operating within the Mode C veil of a Class B airspace.",
+  },
+  {
+    category: "fars",
+    question: "When is a transponder required in Class E airspace?",
+    answer:
+      "A transponder with Mode C is required in Class E airspace at and above 10,000 feet MSL, excluding airspace below 2,500 feet AGL.",
+  },
+  {
+    category: "fars",
+    question: "When is a transponder required in Class G airspace?",
+    answer:
+      "A transponder with Mode C is not required in Class G airspace, except when flying at and above 10,000 feet MSL, excluding airspace below 2,500 feet AGL.",
+  },
+  {
+    category: "fars",
+    question: "When is a transponder required near the U.S. ADIZ?",
+    answer:
+      "A transponder with Mode C is required when operating within 12 nautical miles of the U.S. ADIZ (Air Defense Identification Zone).",
+  },
+  {
+    category: "fars",
+    question:
+      "What is the Mode C veil, and when do you need a transponder within it?",
+    answer:
+      "The Mode C veil is a 30 nautical mile radius around Class B primary airports where a transponder with Mode C is required, regardless of the altitude being flown.",
   }
 ];
