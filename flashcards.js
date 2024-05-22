@@ -2189,10 +2189,8 @@ const flashcards = [
       "Yes, it is permissible to fly VFR through an ADIZ (Air Defense Identification Zone), but pilots must file a flight plan, equip a working transponder with altitude reporting, and maintain radio communication with ATC.",
   },
   {
-    question:
-      "What is the minimum safe altitude for horizontal and vertical navigation in rural areas?",
-    answer:
-      "The minimum safe altitude in rural areas is 500 feet above the highest obstacle within a horizontal radius of 2000 feet of the aircraft.",
+    "question": "What is the minimum safe altitude for horizontal and vertical navigation in rural areas?",
+    "answer": "The minimum safe altitude in rural areas is 500 feet above the surface, except over open water or sparsely populated areas. In those cases, the aircraft must be operated no closer than 500 feet to any person, vessel, vehicle, or structure."
   },
   {
     question:
