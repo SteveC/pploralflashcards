@@ -2691,12 +2691,12 @@ const flashcards = [
   {
     question: "What is true airspeed (TAS)?",
     answer:
-      "True airspeed (TAS) is the actual speed of the aircraft relative to the air mass in which it is flying. It is calibrated airspeed corrected for altitude and non-standard temperature.",
+      "True airspeed (TASs) is the actual speed of the aircraft relative to the air mass in which it is flying. It is calibrated airspeed corrected for altitude and non-standard temperature.",
   },
   {
     question: "How do you calculate true airspeed (TAS)?",
     answer:
-      "True airspeed (TAS) can be calculated using an E6B flight computer or a TAS formula that accounts for altitude and temperature. A rough estimate is adding 2% of the indicated airspeed for every 1,000 feet of altitude above sea level.",
+      "True airspeed (TAS) can be calculated using an E6B flight computer or a TAS formula that accounts for pressure altitude and temperature. A rough estimate is adding 2% of the indicated airspeed for every 1,000 feet of pressure altitude above sea level.",
   },
   {
     question: "What is groundspeed (GS)?",
