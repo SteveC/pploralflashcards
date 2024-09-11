@@ -1,5 +1,7 @@
 let currentCard = -1;
 let answerVisible = false;
+let shuffledCards = [];
+let currentIndex = 0;
 
 document.getElementById("showAnswerBtn").addEventListener("click", function() {
     const answerElement = document.getElementById("answer");
@@ -21,6 +23,15 @@ function generateQuestionHash(question) {
     }, 0)).toString(16).substring(0, 4); // Convert to hex and limit to 4 characters
 }
 
+function shuffleCards() {
+    shuffledCards = [...flashcards];
+    for (let i = shuffledCards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffledCards[i], shuffledCards[j]] = [shuffledCards[j], shuffledCards[i]];
+    }
+    currentIndex = 0;
+}
+
 function showNextCard() {
     const allFlashcardsDiv = document.querySelector(".all-flashcards");
     allFlashcardsDiv.style.display = "none"; 
@@ -28,19 +39,19 @@ function showNextCard() {
     const flashcardDiv = document.querySelector(".flashcard");
     flashcardDiv.style.display = "flex"; 
 
-    let newIndex;
-    do {
-        newIndex = Math.floor(Math.random() * flashcards.length);
-    } while (newIndex === currentCard);
-    currentCard = newIndex;
+    if (currentIndex >= shuffledCards.length) {
+        shuffleCards(); // This line ensures cards are reshuffled when reaching the end
+    }
 
-    const card = flashcards[currentCard];
+    const card = shuffledCards[currentIndex];
     const questionHash = generateQuestionHash(card.question);
 
     document.getElementById("question").textContent = `Question ${questionHash}: ${card.question}`;
     document.getElementById("answer").textContent = card.answer;
     document.getElementById("answer").style.visibility = "hidden";
     answerVisible = false;
+
+    currentIndex++;
 }
 
 function listAllFlashcards() {
@@ -82,4 +93,7 @@ document.getElementById("navItem1").addEventListener("click", function() {
 
 document.getElementById("navItem2").addEventListener("click", listAllFlashcards);
 
-window.onload = showNextCard;
+window.onload = function() {
+    shuffleCards();
+    showNextCard();
+};
