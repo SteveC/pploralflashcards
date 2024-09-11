@@ -64,7 +64,7 @@ const flashcards = [
   {
     category: "lightgun",
     question:
-      "Is there any significance to a flashing white light signal in the air?",
+      "Is there any significance to a flashing white light signal from a tower in the air?",
     answer: "No, a flashing white light signal has no meaning in the air.",
   },
   {
@@ -78,7 +78,7 @@ const flashcards = [
     question:
       "What should a pilot do if they see a green light flashing while taxiing but haven’t been cleared for takeoff?",
     answer:
-      "Remain clear of the runway and contact the control tower to clarify the instruction.",
+      "Cleared to continue taxi.",
   },
 
   // Aerodynamics
@@ -406,10 +406,9 @@ const flashcards = [
       "The yellow arc represents caution speeds, suitable only in smooth air conditions, as higher speeds might cause structural damage due to turbulence or other stresses.",
   },
   {
-    category: "instruments",
-    question: "How does temperature affect the altimeter?",
-    answer:
-      "Colder than standard temperatures can cause the altimeter to read lower than the true altitude, meaning the aircraft is actually higher than indicated. Conversely, warmer temperatures can cause the altimeter to read higher than the true altitude, indicating the aircraft is lower than it actually is.",
+    "category": "instruments",
+    "question": "How does temperature affect the altimeter?",
+    "answer": "Colder than standard temperatures can cause the altimeter to read higher than the true altitude, meaning the aircraft is actually lower than indicated. Conversely, warmer temperatures can cause the altimeter to read lower than the true altitude, indicating the aircraft is higher than it actually is. This occurs because colder air is denser, causing the vertical pressure levels to contract and be spaced more closely together, resulting in the altimeter indicating a higher altitude for the same pressure level."
   },
   {
     category: "instruments",
@@ -1652,11 +1651,9 @@ const flashcards = [
       "Turn off the electrical master switch, all other switches, and avionics. Ventilate the cockpit if possible and prepare for a possible landing at the nearest suitable area.",
   },
   {
-    category: "emergency procedures",
-    question:
-      "What are the immediate actions for a pilot if the cockpit fills with smoke?",
-    answer:
-      "Don a smoke mask if available, increase cabin air, and attempt to identify and eliminate the source of the smoke. Plan for an immediate landing at the nearest airport.",
+    "category": "emergency procedures",
+    "question": "What are the immediate actions for a pilot if the cockpit fills with smoke?",
+    "answer": "If the cockpit fills with smoke, likely due to an electrical fire, the immediate actions are to close all windows, shut off cabin air and heat to prevent further smoke entry, and use a fire extinguisher if necessary. Once the fire is extinguished, ventilate the cabin. Plan for an immediate landing at the nearest airport."
   },
   {
     category: "emergency procedures",
