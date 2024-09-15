@@ -44,3 +44,24 @@ body {
     border-top: 1px solid #e7e7e7; /* Example border */
     padding: 20px 0;        /* Padding for aesthetics */
 }
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.right-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    margin: 0 5px;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

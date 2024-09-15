@@ -9,13 +9,13 @@ document.getElementById("showAnswerBtn").addEventListener("click", function() {
     answerVisible = true;
     document.getElementById("showAnswerBtn").style.display = "none";
     document.getElementById("nextQuestionBtn").style.display = "inline-block";
+    // Remove the condition for showing the previous button
+    document.getElementById("prevQuestionBtn").style.display = "inline-block";
 });
 
-document.getElementById("nextQuestionBtn").addEventListener("click", function() {
-    showNextCard();
-    document.getElementById("nextQuestionBtn").style.display = "none";
-    document.getElementById("showAnswerBtn").style.display = "inline-block";
-});
+document.getElementById("nextQuestionBtn").addEventListener("click", showNextCard);
+
+document.getElementById("prevQuestionBtn").addEventListener("click", showPreviousCard);
 
 function generateQuestionHash(question) {
     return Math.abs(question.split('').reduce((a, b) => {
@@ -40,7 +40,7 @@ function showNextCard() {
     flashcardDiv.style.display = "flex"; 
 
     if (currentIndex >= shuffledCards.length) {
-        shuffleCards(); // This line ensures cards are reshuffled when reaching the end
+        shuffleCards();
     }
 
     const card = shuffledCards[currentIndex];
@@ -51,7 +51,19 @@ function showNextCard() {
     document.getElementById("answer").style.visibility = "hidden";
     answerVisible = false;
 
+    document.getElementById("showAnswerBtn").style.display = "inline-block";
+    document.getElementById("nextQuestionBtn").style.display = "none";
+    
+    updateButtonState();
+
     currentIndex++;
+}
+
+function showPreviousCard() {
+    if (currentIndex > 1) {
+        currentIndex -= 2;
+        showNextCard();
+    }
 }
 
 function listAllFlashcards() {
@@ -84,16 +96,27 @@ function listAllFlashcards() {
 }
 
 document.getElementById("navItem1").addEventListener("click", function() {
+    currentIndex = 0;
     showNextCard();
-    document.getElementById("answer").style.visibility = "hidden";
-    answerVisible = false;
-    document.getElementById("nextQuestionBtn").style.display = "none";
-    document.getElementById("showAnswerBtn").style.display = "inline-block";
 });
 
 document.getElementById("navItem2").addEventListener("click", listAllFlashcards);
 
+function updateButtonState() {
+    const prevButton = document.getElementById("prevQuestionBtn");
+    if (currentIndex === 0) {
+        prevButton.disabled = true;
+        prevButton.classList.add("btn-secondary");
+        prevButton.classList.remove("btn-primary");
+    } else {
+        prevButton.disabled = false;
+        prevButton.classList.add("btn-primary");
+        prevButton.classList.remove("btn-secondary");
+    }
+}
+
 window.onload = function() {
     shuffleCards();
+    updateButtonState(); // Call this before showing the first card
     showNextCard();
 };
